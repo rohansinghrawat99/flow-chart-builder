@@ -83,7 +83,7 @@ const FlowChart: React.FC<FlowChartProps> = ({
             );
             setNodes((nodes: any[]) => nodes.filter((e: { id: any; }) => e.id !== deleted[0].id))
         },
-        [nodes, edges]
+        [nodes, edges, setEdges, setNodes]
     )
 
     return (
